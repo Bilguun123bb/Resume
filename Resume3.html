@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sample Resume — Alex Johnson</title>
+  <style>
+    :root{
+      --accent:#0b76ef;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --maxw:900px;
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:#111827}
+    .container{max-width:var(--maxw);margin:32px auto;padding:28px}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,6,23,0.06);overflow:hidden}
+    .layout{display:grid;grid-template-columns:1fr 320px;gap:28px}
+    header{display:flex;align-items:flex-start;gap:16px;padding:28px 28px 0}
+    .avatar{width:92px;height:92px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    .name-block{flex:1}
+    h1{margin:0;font-size:24px}
+    p.title{margin:6px 0 0;color:var(--muted)}
+    main{padding:20px 28px 28px}
+    section{margin-bottom:18px}
+    .section-title{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--accent);margin-bottom:10px}
+    .job{margin-bottom:12px}
+    .job h3{margin:0;font-size:16px}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
+    ul{margin:6px 0 0;padding-left:18px}
+    aside{background:linear-gradient(180deg,rgba(11,118,239,0.04),transparent);padding:28px;border-left:1px solid rgba(15,23,42,0.03)}
+    .contact-item{font-size:14px;color:#111827;margin-bottom:10px}
+    .skill{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+    .skill .bar{flex:1;height:8px;background:#e6eefb;border-radius:999px;margin-left:10px;overflow:hidden}
+    .skill .fill{height:100%;background:var(--accent);width:60%}
+    @media print{
+      body{background:white}
+      .container{box-shadow:none;margin:0;padding:0}
+      .layout{grid-template-columns:1fr 280px}
+    }
+    @media (max-width:880px){
+      .layout{grid-template-columns:1fr;}
+      aside{order:2;border-left:0;border-top:1px solid rgba(15,23,42,0.04)}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar">AJ</div>
+        <img src="Blue Long stem Roses 60-70 cms.jpeg" alt="Profile photo" class="profile-pic">
+        <style>
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
+}
+</style>
+
+        <div class="name-block">
+          <h1>Bilguun Byambajargal</h1>
+          <div class="title">Software Engineer • Taipei, Taiwan • Open to relocation</div>
+          <div style="margin-top:10px;color:var(--muted);font-size:14px">Full-stack developer with 5+ years experience building scalable web applications and mentoring junior engineers.</div>
+        </div>
+      </header>
+
+      <div class="layout">
+        <main>
+          <section aria-labelledby="exp">
+            <div class="section-title" id="exp">Work Experience</div>
+
+            <article class="job">
+              <h3>Senior Software Engineer — ExampleCorp</h3>
+              <div class="meta">Taipei, Taiwan • Jan 2022 — Present</div>
+              <ul>
+                <li>Led a team of 4 engineers to design and build a customer-facing dashboard used by 50k+ monthly active users.</li>
+                <li>Improved page load performance by 45% through code-splitting and optimizing critical render paths.</li>
+                <li>Introduced automated end-to-end testing, reducing production regressions by 30%.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <h3>Full-Stack Developer — StartupX</h3>
+              <div class="meta">Ulaanbaatar, Mongolia • Jun 2019 — Dec 2021</div>
+              <ul>
+                <li>Built RESTful APIs and frontend components in React, enabling new product features that increased retention by 18%.</li>
+                <li>Collaborated with product and design to ship monthly releases and iterate using user feedback.</li>
+              </ul>
+            </article>
+          </section>
+
+          <section aria-labelledby="projects">
+            <div class="section-title" id="projects">Selected Projects</div>
+            <div class="job">
+              <h3>Open Source Analytics Tool</h3>
+              <div class="meta">GitHub • 2021</div>
+              <ul>
+                <li>Designed a lightweight analytics client and dashboard; documented usage and maintained CI pipeline.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <h3>Mobile Ordering App</h3>
+              <div class="meta">Freelance • 2020</div>
+              <ul>
+                <li>Implemented offline-first features and push notifications; app reached 10k installs.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section aria-labelledby="education">
+            <div class="section-title" id="education">Education</div>
+            <div class="job">
+              <h3>Bachelor of Science, Computer Science</h3>
+              <div class="meta">National University — 2015 — 2019</div>
+              <div style="color:var(--muted);font-size:14px;margin-top:6px">Relevant coursework: Data Structures, Databases, Web Development. GPA: 3.6/4.0</div>
+            </div>
+          </section>
+
+          <section aria-labelledby="more">
+            <div class="section-title" id="more">Additional</div>
+            <div style="display:flex;gap:14px;flex-wrap:wrap">
+              <div style="min-width:160px">
+                <strong>Languages</strong>
+                <div style="color:var(--muted);font-size:14px">Mongolian (native), English (fluent), Mandarin (conversational)</div>
+              </div>
+              <div style="min-width:160px">
+                <strong>Certifications</strong>
+                <div style="color:var(--muted);font-size:14px">AWS Certified Developer — Associate (2023)</div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <aside>
+          <section aria-labelledby="contact">
+            <div class="section-title" id="contact">Contact</div>
+            <div class="contact-item"><strong>Email:</strong> alex.johnson@example.com</div>
+            <div class="contact-item"><strong>Phone:</strong> +886 912 345 678</div>
+            <div class="contact-item"><strong>Website:</strong> alexjohnson.dev</div>
+            <div class="contact-item"><strong>LinkedIn:</strong> linkedin.com/in/alexjohnson</div>
+            <div class="contact-item"><strong>GitHub:</strong> github.com/alexjohnson</div>
+          </section>
+
+          <section aria-labelledby="skills" style="margin-top:14px">
+            <div class="section-title" id="skills">Skills</div>
+            <div class="skill"><div>JavaScript</div><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+            <div class="skill"><div>React</div><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+            <div class="skill"><div>Node.js</div><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+            <div class="skill"><div>SQL & Databases</div><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+            <div class="skill"><div>DevOps / CI</div><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+          </section>
+
+          <section aria-labelledby="tools" style="margin-top:14px">
+            <div class="section-title" id="tools">Tools</div>
+            <div style="color:var(--muted);font-size:14px">Git, Docker, AWS, Jira, Figma</div>
+          </section>
+
+          <section aria-labelledby="references" style="margin-top:18px">
+            <div class="section-title" id="references">References</div>
+            <div style="color:var(--muted);font-size:14px">Available upon request.</div>
+          </section>
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</html>
+<img src="Blue Long stem Roses 60-70 cms.jpeg" alt="Profile photo" width="150">
